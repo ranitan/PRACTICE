@@ -7,17 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML PRACTICE</title>
     <style>
-        .f{
-            background-color:rgb(193, 155, 161);
+        .f {
+            background-color: rgb(193, 155, 161);
         }
-        .b{
+
+        .b {
             background-color: aqua;
         }
+        .form1{
+            background-color: rgb(35, 176, 20);
+            padding:20px;
+          }
+          fieldset{
+            padding:40px;
+            background-color: rgb(23, 25, 25);
+            color:white;
+          }
+          input{
+            padding:10px;
+            width:300px;
+          }
+          label{
+            padding:30px 30px 20px;
+            padding-bottom: 20px;
+        
+          }
     </style>
 </head>
 
 <body>
-    <h1>hello</h1>
+    <!-- <h1>hello</h1>
     <h2>hello</h2>
     <h3>hello</h3>
     <h4>hello</h4>
@@ -38,10 +57,10 @@
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUP-HE7EkjOk-zv_IkCWURuadm965J5OjuIg&usqp=CAu"
         alt="seasons">
     <br>
-    <a href="https://www.javatpoint.com/seasons-in-india">javatpoint</a>
+    <a href="https://www.javatpoint.com/seasons-in-india" target="blank">javatpoint</a>
 
     <audio controls autoplay muted>
-        <source src="\smoke-143172.mp3" type="audio/mp3">
+        <source src="\smoke-143172.mp3" type="audio/mp3"> 
     </audio>
     <br>
     <p>hai i am <del>harini</del> harita.</p>
@@ -97,23 +116,73 @@
                                                 </h1>
                                             </dl>
 
-                                            <button>submit</button>
+                                            <button>submit</button> -->
 
-                                            <form method="post" action="www.google.com">
+    <!-- <form method="post" action="www.google.com">
                                                 <fieldset class="f">
                                                     <h1>REGISTRATION FORM</h1>
                                                     <label>NAME</label>
                                                     <input type="text">
                                                     <br>
                                                     <br>
-                                                        <label>EMAIL</label>
+                                                    <label>EMAIL</label>
                                                     <input type="email">
                                                     <br>
                                                     <br>
                                                     <button class="b">SUBMIT</button>
 
                                                 </fieldset>
-                                            </form>
+                                            </form> -->
+
+    <form method="post" action="https://www.cgvakindia.com/" class="form1">
+        <fieldset>
+            <h1>REGISTRATION FORM</h1>
+            <label>FIRST NAME</label>
+            <input type="text" required>
+            <br>
+            <label>LAST NAME</label>
+            <input type="text" required>
+            <br>
+            <label>PHONE NUMBER</label>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" required>
+            <br>
+            <label>ADDRESS</label>
+            <input type="textarea" required>
+            <br>
+            <label>EMAIL</label>
+            <input type="email" required>
+            <br>
+            <label>DEGREE</label>
+            <br>
+            <label>bsc</label>
+            <input type="checkbox" value="bsc">
+            <br>
+            <label>bca</label>
+            <input type="checkbox" value="bca">
+            <br>
+            <label>bba</label>
+            <input type="checkbox" value="bsc">
+            <br>
+            <label>COURSES</label>
+            <br>
+            <select>
+                <option value="java">java</option>
+                <option value="python">python</option>
+                <option value="c++">c++</option>
+                <option value="c">c</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit">
+        </fieldset>
+
+    </form>
+
+
+
+
+
+
 
 </body>
 
